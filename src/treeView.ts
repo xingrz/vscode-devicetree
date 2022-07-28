@@ -416,7 +416,7 @@ export class DTSTreeView implements
                         irq.name += ` (${irqNames?.[i] ?? i})`;
                     }
 
-                    const prioIdx = cells.indexOf('priority');
+                    const prioIdx = cells?.indexOf('priority');
                     if (cellValues?.length > prioIdx) {
                         irq.description = 'Priority: ' + cellValues[prioIdx]?.toString();
                     }
